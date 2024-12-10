@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Div Tag Examples</title>
+    <style>
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .box {
+            border: 1px solid #333;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .flex-item {
+            flex: 1;
+            margin: 0 5px;
+            padding: 10px;
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <!-- Basic div usage -->
+    <div class="container">
+        <h1>HTML Div Tag Examples</h1>
+        
+        <!-- Div with class attribute -->
+        <div class="box">
+            <h2>Basic Div with Class</h2>
+            <p>This is a basic div with a class attribute for styling.</p>
+        </div>
+        
+        <!-- Div with id attribute -->
+        <div id="unique-div" class="box">
+            <h2>Div with ID</h2>
+            <p>This div has an id attribute, which can be used for unique styling or JavaScript selection.</p>
+        </div>
+        
+        <!-- Nested divs -->
+        <div class="box">
+            <h2>Nested Divs</h2>
+            <div>
+                <p>This is a parent div.</p>
+                <div>
+                    <p>This is a child div nested inside the parent.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Div with inline style -->
+        <div style="background-color: #e0e0e0; border: 2px dashed #666; padding: 15px;">
+            <h2>Div with Inline Style</h2>
+            <p>This div uses inline CSS styling.</p>
+        </div>
+        
+        <!-- Using divs for layout -->
+        <div class="flex-container">
+            <div class="flex-item">
+                <h3>Column 1</h3>
+                <p>This is the first column in a flex layout.</p>
+            </div>
+            <div class="flex-item">
+                <h3>Column 2</h3>
+                <p>This is the second column in a flex layout.</p>
+            </div>
+            <div class="flex-item">
+                <h3>Column 3</h3>
+                <p>This is the third column in a flex layout.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
